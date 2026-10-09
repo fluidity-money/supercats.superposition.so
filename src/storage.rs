@@ -66,6 +66,13 @@ macro_rules! storage {
             let v = storage_load(&k);
             storage_store(&k, &(v + U::ONE))
         }
+
+        pub fn exchange($param1: impl Into<U>) {
+            let k = slot_map(&$param1.into(), &SLOT);
+            let cur = storage_load(&k);
+            assert_eq!(U::ZERO, cur, "exchange failed for hash");
+            storage_store(&k, &U::ONE)
+        }
     };
     (@impl [$param1:ident, $param2:ident]) => {
         pub fn get(
@@ -98,5 +105,6 @@ storage! {
     balance(addr),
     owner_of(token_id),
     approval(token_id),
-    approved_for_all(from, sender)
+    approved_for_all(from, sender),
+    verified_hashes(hash)
 }
