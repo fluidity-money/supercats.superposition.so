@@ -41,6 +41,7 @@ macro_rules! storage {
         }
     };
     (@impl [$param1:ident]) => {
+        #[allow(unused)]
         pub fn get($param1: impl Into<U>) -> U {
             storage_load(&slot_map(&$param1.into(), &SLOT))
         }
@@ -67,6 +68,7 @@ macro_rules! storage {
             storage_store(&k, &(v + U::ONE))
         }
 
+        #[allow(unused)]
         pub fn exchange($param1: impl Into<U>) {
             let k = slot_map(&$param1.into(), &SLOT);
             let cur = storage_load(&k);

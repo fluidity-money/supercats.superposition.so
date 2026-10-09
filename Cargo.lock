@@ -358,9 +358,9 @@ dependencies = [
 
 [[package]]
 name = "stylus-merkle-proof-verifier"
-version = "0.1.0"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "22ac772b9541a2f5c595964b6b6032a3aeec5be65386e069f9b34488d5f1c825"
+checksum = "320e639862e25034d9edfd137042011b2910ef1fb3dad25007e3a293b77e4aa7"
 dependencies = [
  "array-concat",
  "bobcat-storage",
