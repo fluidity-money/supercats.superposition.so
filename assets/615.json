@@ -1,0 +1,36 @@
+{
+  "name": "Patrica Constancy",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/615.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Patrica Constancy"
+    },
+    {
+      "trait_type": "background",
+      "value": "Tokyo"
+    },
+    {
+      "trait_type": "body",
+      "value": "Big Think Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Retvrn"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Hood rich"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Zoom Zoom"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Gemson"
+    }
+  ]
+}

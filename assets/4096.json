@@ -1,0 +1,36 @@
+{
+  "name": "Celisse Eleanor",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/4096.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Celisse Eleanor"
+    },
+    {
+      "trait_type": "background",
+      "value": "Bern"
+    },
+    {
+      "trait_type": "body",
+      "value": "Excited Light"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Dr. Cat"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Aye-aye"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Maid Attire"
+    },
+    {
+      "trait_type": "hand",
+      "value": "FrenFood"
+    }
+  ]
+}

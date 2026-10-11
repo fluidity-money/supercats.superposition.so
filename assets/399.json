@@ -1,0 +1,36 @@
+{
+  "name": "Selcuk Joachim",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/399.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Selcuk Joachim"
+    },
+    {
+      "trait_type": "background",
+      "value": "Cape Town"
+    },
+    {
+      "trait_type": "body",
+      "value": "Cookie Enjoyer Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Retvrn"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Hood rich"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Feels good to be a king"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Audiophile"
+    }
+  ]
+}

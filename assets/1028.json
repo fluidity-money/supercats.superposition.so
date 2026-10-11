@@ -1,0 +1,36 @@
+{
+  "name": "Chi-Man Ravi",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/1028.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Chi-Man Ravi"
+    },
+    {
+      "trait_type": "background",
+      "value": "Sydney"
+    },
+    {
+      "trait_type": "body",
+      "value": "Excited Light"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Sea Master"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Kino enjoyer"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Maid Attire"
+    },
+    {
+      "trait_type": "hand",
+      "value": "FrenFood"
+    }
+  ]
+}

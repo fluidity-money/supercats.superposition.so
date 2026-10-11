@@ -1,0 +1,36 @@
+{
+  "name": "Jeanice Iteam",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/1836.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Jeanice Iteam"
+    },
+    {
+      "trait_type": "background",
+      "value": "Islamabad"
+    },
+    {
+      "trait_type": "body",
+      "value": "Wut Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Doomie"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Kino enjoyer"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Steampunk"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Retro Storage"
+    }
+  ]
+}

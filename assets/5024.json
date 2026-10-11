@@ -1,0 +1,36 @@
+{
+  "name": "Eada Famke",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/5024.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Eada Famke"
+    },
+    {
+      "trait_type": "background",
+      "value": "Nicosia"
+    },
+    {
+      "trait_type": "body",
+      "value": ""
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Dr. Cat"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Sophisticated"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Steampunk"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Audiophile"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Synful Bettye",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/3462.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Synful Bettye"
+    },
+    {
+      "trait_type": "background",
+      "value": "Nicosia"
+    },
+    {
+      "trait_type": "body",
+      "value": "This is so sad"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Davids Jacket"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Imagine"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Trad Turk"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Gemson"
+    }
+  ]
+}

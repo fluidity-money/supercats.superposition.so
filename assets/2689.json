@@ -1,0 +1,36 @@
+{
+  "name": "Mommy Eva",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/2689.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Mommy Eva"
+    },
+    {
+      "trait_type": "background",
+      "value": "Zagreb"
+    },
+    {
+      "trait_type": "body",
+      "value": "Big Think Light"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Classy Lady"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Solid snake headwear"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Doomed"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Kenchiro Ichiimada"
+    }
+  ]
+}

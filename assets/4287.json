@@ -1,0 +1,36 @@
+{
+  "name": "Siu-Ling Bobbye",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/4287.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Siu-Ling Bobbye"
+    },
+    {
+      "trait_type": "background",
+      "value": "Helsinki"
+    },
+    {
+      "trait_type": "body",
+      "value": "Excited Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Retvrn"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Hood rich"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Gonna ride till\u0027 I can\u0027t no more"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Playa"
+    }
+  ]
+}

@@ -1,20 +1,15 @@
-#![no_std]
-#![no_main]
+#![cfg_attr(target_arch = "wasm32", no_std, no_main)]
 
 use bobcat_sdk::prelude::*;
 
-type Entry = Eip721MetadataDataSlice<1000, 100>;
+mod storage;
+
+type Entry = libsupercats::Eip721MetadataDataSlice<1000, 100>;
 
 use const_hex::display as hex_display;
 
-use array_concat::concat_arrays;
-
-mod entry;
-mod storage;
-
-use entry::Eip721MetadataDataSlice;
-
-const MERKLE_PROOF_ROOT: U = U::from_u32(123);
+const MERKLE_PROOF_ROOT: U =
+    U::const_from_hex(b"67c52ca4ef45d254908c898576d9f9bddb8094c25f863dfc2bb66bc9b01ee301").unwrap();
 
 const CDN_URI_CATS: &'static str = "https://cats-cdn.superposition.so/";
 
@@ -128,17 +123,17 @@ fn set_approval_for_all(operator: [u8; 20], approved: bool) {
 
 const DATA_CAP: usize = 1000;
 
-#[unsafe(no_mangle)]
-fn user_entrypoint(len: usize) -> usize {
-    match read_cd::<Entry>(len) {
+fn entry(entry: Entry) {
+    match entry {
         Entry::Claim {
             account,
             token_id,
             merkle_proof,
         } => flush_guard(|| {
-            let pre: [u8; 20 + size_of::<u32>()] =
-                concat_arrays!(account.0, token_id.to_be_bytes());
-            let hash = keccak256(&pre);
+            let mut pre = [0u8; 64];
+            pre[28..32].copy_from_slice(&token_id.to_be_bytes());
+            pre[44..64].copy_from_slice(&account.0);
+            let hash = keccak256(&keccak256(&pre).0);
             assert!(
                 stylus_merkle_proof_verifier::verify(
                     &merkle_proof.as_slice(),
@@ -209,6 +204,62 @@ fn user_entrypoint(len: usize) -> usize {
         Entry::SetApprovalForAll { operator, approved } => {
             flush_guard(|| set_approval_for_all(operator.into(), approved))
         }
-    };
+    }
+}
+
+#[unsafe(no_mangle)]
+fn user_entrypoint(len: usize) -> usize {
+    entry(read_cd::<Entry>(len));
     0
+}
+
+#[cfg(not(target_arch = "wasm32"))]
+fn main() {}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    use serde::Deserialize as SerdeDeserialize;
+
+    const ITEMS: &'static str = include_str!("../proofs.json");
+
+    #[derive(Clone, PartialEq, SerdeDeserialize)]
+    struct Item {
+        token_id: u32,
+        #[serde(deserialize_with = "const_hex::deserialize")]
+        owner: [u8; 20],
+        #[serde(deserialize_with = "deserialize_proof")]
+        proof: Vec<[u8; 32]>,
+    }
+
+    fn deserialize_proof<'de, D>(d: D) -> Result<Vec<[u8; 32]>, D::Error>
+    where
+        D: serde::Deserializer<'de>,
+    {
+        let values = Vec::<String>::deserialize(d)?;
+        values
+            .into_iter()
+            .map(|s| const_hex::decode_to_array::<_, 32>(&s).map_err(serde::de::Error::custom))
+            .collect()
+    }
+
+    #[test]
+    fn test_all_claims() {
+        for Item {
+            token_id,
+            owner,
+            proof,
+        } in serde_json::from_str::<Vec<Item>>(ITEMS).unwrap()
+        {
+            entry(Entry::Claim {
+                account: EvmCdAddress(owner),
+                token_id,
+                merkle_proof: EvmCdArray::try_from_slice(
+                    &proof.into_iter().map(U).collect::<Vec<_>>(),
+                )
+                .unwrap(),
+            })
+        }
+    }
 }

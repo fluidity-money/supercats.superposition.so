@@ -1,0 +1,36 @@
+{
+  "name": "Meggy Olympe",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/1301.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Meggy Olympe"
+    },
+    {
+      "trait_type": "background",
+      "value": "Mal\u00E9"
+    },
+    {
+      "trait_type": "body",
+      "value": "Tongue Apustaja Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Cat Cobain"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Akshually"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Wizard"
+    },
+    {
+      "trait_type": "hand",
+      "value": "FrenFood"
+    }
+  ]
+}

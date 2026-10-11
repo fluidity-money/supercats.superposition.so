@@ -1,0 +1,36 @@
+{
+  "name": "Lei-See Harri",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/4197.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Lei-See Harri"
+    },
+    {
+      "trait_type": "background",
+      "value": "Doha"
+    },
+    {
+      "trait_type": "body",
+      "value": "Big Think Light"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Biker"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Akshually"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Doomed"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Kenchiro Ichiimada"
+    }
+  ]
+}

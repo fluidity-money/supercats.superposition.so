@@ -1,0 +1,36 @@
+{
+  "name": "Hanja Abra",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/345.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Hanja Abra"
+    },
+    {
+      "trait_type": "background",
+      "value": "Otawa"
+    },
+    {
+      "trait_type": "body",
+      "value": "Smug Apustaja Light"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Retvrn"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Solid snake headwear"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Cloud LARP"
+    },
+    {
+      "trait_type": "hand",
+      "value": "In Minecraft"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Brooke Merci",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/1917.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Brooke Merci"
+    },
+    {
+      "trait_type": "background",
+      "value": "Luxembourg"
+    },
+    {
+      "trait_type": "body",
+      "value": "You mi fren! -LITE-"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Doomie"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Akshually"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Desert Enjoyer"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Vapedude"
+    }
+  ]
+}

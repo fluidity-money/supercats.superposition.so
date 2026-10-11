@@ -1,0 +1,36 @@
+{
+  "name": "Torie Barbey",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/3397.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Torie Barbey"
+    },
+    {
+      "trait_type": "background",
+      "value": "Ljubljana"
+    },
+    {
+      "trait_type": "body",
+      "value": "Big Think Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Vice Cat"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Akshually"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Zoom Zoom"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Gemson"
+    }
+  ]
+}

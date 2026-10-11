@@ -1,0 +1,36 @@
+{
+  "name": "Dinah Dpn",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/830.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Dinah Dpn"
+    },
+    {
+      "trait_type": "background",
+      "value": "Victoria"
+    },
+    {
+      "trait_type": "body",
+      "value": "WOW LIGHT"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Snake Snake Snaaaaaaaaaaake"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Imagine"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Girly Girl"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Kenchiro Ichiimada"
+    }
+  ]
+}

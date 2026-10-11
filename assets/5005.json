@@ -1,0 +1,36 @@
+{
+  "name": "Wilona Zsa zsa",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/5005.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Wilona Zsa zsa"
+    },
+    {
+      "trait_type": "background",
+      "value": "Mexico City"
+    },
+    {
+      "trait_type": "body",
+      "value": ""
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Trad Japanese"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Kino enjoyer"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Trad Turk"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Playa"
+    }
+  ]
+}

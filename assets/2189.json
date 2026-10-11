@@ -1,0 +1,36 @@
+{
+  "name": "Engracia Hedda",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/2189.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Engracia Hedda"
+    },
+    {
+      "trait_type": "background",
+      "value": "Damascus"
+    },
+    {
+      "trait_type": "body",
+      "value": "Smidge Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Sea Master"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Akshually"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Nerdy Nerd"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Returner of Tradition"
+    }
+  ]
+}

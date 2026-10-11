@@ -1,0 +1,36 @@
+{
+  "name": "Tomasine Nedi",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/3025.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Tomasine Nedi"
+    },
+    {
+      "trait_type": "background",
+      "value": "Tirana"
+    },
+    {
+      "trait_type": "body",
+      "value": "Cookie Enjoyer Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Freedom Land"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Solid snake headwear"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Feels good to be a king"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Audiophile"
+    }
+  ]
+}

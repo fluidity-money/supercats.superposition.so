@@ -1,0 +1,36 @@
+{
+  "name": "Rosie Claudine",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/74.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Rosie Claudine"
+    },
+    {
+      "trait_type": "background",
+      "value": "Sydney"
+    },
+    {
+      "trait_type": "body",
+      "value": "Cookie Enjoyer Light"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Snake Snake Snaaaaaaaaaaake"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Like a sir"
+    },
+    {
+      "trait_type": "hat",
+      "value": "AyeAye Captain"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Audiophile"
+    }
+  ]
+}

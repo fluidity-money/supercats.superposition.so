@@ -1,0 +1,36 @@
+{
+  "name": "Gheorghe Anton-Phuoc",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/3065.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Gheorghe Anton-Phuoc"
+    },
+    {
+      "trait_type": "background",
+      "value": "Paris"
+    },
+    {
+      "trait_type": "body",
+      "value": "Excited Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Trad Spanish"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Solid snake headwear"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Gonna ride till\u0027 I can\u0027t no more"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Playa"
+    }
+  ]
+}

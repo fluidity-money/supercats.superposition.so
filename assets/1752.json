@@ -1,0 +1,36 @@
+{
+  "name": "Duncan Jordana",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/1752.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Duncan Jordana"
+    },
+    {
+      "trait_type": "background",
+      "value": "Beijing"
+    },
+    {
+      "trait_type": "body",
+      "value": "Dark\u0027n\u0027Sad"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Under the Sea"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Aye-aye"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Gopnik"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Playa"
+    }
+  ]
+}

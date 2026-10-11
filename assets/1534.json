@@ -1,0 +1,36 @@
+{
+  "name": "Terry Baljinder",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/1534.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Terry Baljinder"
+    },
+    {
+      "trait_type": "background",
+      "value": "Tunis"
+    },
+    {
+      "trait_type": "body",
+      "value": "Tongue Apustaja Light"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Vice Cat"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Imagine"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Shroomer"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Boomer Sipp"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Carol-jean Jaynie",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/3480.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Carol-jean Jaynie"
+    },
+    {
+      "trait_type": "background",
+      "value": "Victoria"
+    },
+    {
+      "trait_type": "body",
+      "value": "Cookie Enjoyer Light"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Under the Sea"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Aye-aye"
+    },
+    {
+      "trait_type": "hat",
+      "value": "AyeAye Captain"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Audiophile"
+    }
+  ]
+}

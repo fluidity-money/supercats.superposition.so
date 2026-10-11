@@ -7,3 +7,4 @@ docs/
 out/
 /target
 supercats.superposition.so.wasm
+node_modules

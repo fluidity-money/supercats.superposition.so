@@ -1,0 +1,36 @@
+{
+  "name": "Otter Pedro",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/5062.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Otter Pedro"
+    },
+    {
+      "trait_type": "background",
+      "value": "Athens"
+    },
+    {
+      "trait_type": "body",
+      "value": ""
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Trad Netherlander"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Akshually"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Cloud LARP"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Fly Catcher"
+    }
+  ]
+}

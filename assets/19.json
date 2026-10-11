@@ -1,0 +1,36 @@
+{
+  "name": "Amour Mid",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/19.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Amour Mid"
+    },
+    {
+      "trait_type": "background",
+      "value": "Prague"
+    },
+    {
+      "trait_type": "body",
+      "value": "You mi fren! -LITE-"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Dr. Cat"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Sophisticated"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Desert Enjoyer"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Vapedude"
+    }
+  ]
+}

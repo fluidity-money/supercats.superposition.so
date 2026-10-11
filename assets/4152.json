@@ -1,0 +1,36 @@
+{
+  "name": "Franny Rianon",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/4152.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Franny Rianon"
+    },
+    {
+      "trait_type": "background",
+      "value": "Jakarta"
+    },
+    {
+      "trait_type": "body",
+      "value": "Squintin Apustaja Lite"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Retvrn"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Aye-aye"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Speedy Speedy"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Returner of Tradition"
+    }
+  ]
+}

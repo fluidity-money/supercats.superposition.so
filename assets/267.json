@@ -1,0 +1,36 @@
+{
+  "name": "Magdi Floria",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/267.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Magdi Floria"
+    },
+    {
+      "trait_type": "background",
+      "value": "S\u00E3o Tom\u00E9"
+    },
+    {
+      "trait_type": "body",
+      "value": "Smug Apustaja Light"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Under the Sea"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Sophisticated"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Cloud LARP"
+    },
+    {
+      "trait_type": "hand",
+      "value": "In Minecraft"
+    }
+  ]
+}

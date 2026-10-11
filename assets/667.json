@@ -1,0 +1,36 @@
+{
+  "name": "Charee Kathrine",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/667.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Charee Kathrine"
+    },
+    {
+      "trait_type": "background",
+      "value": "Panama City"
+    },
+    {
+      "trait_type": "body",
+      "value": "Big Think Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Dr. Cat"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Sophisticated"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Zoom Zoom"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Gemson"
+    }
+  ]
+}

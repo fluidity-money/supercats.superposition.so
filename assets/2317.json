@@ -1,0 +1,36 @@
+{
+  "name": "Lucien Davita",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/2317.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Lucien Davita"
+    },
+    {
+      "trait_type": "background",
+      "value": "Montevideo"
+    },
+    {
+      "trait_type": "body",
+      "value": "Squintin Apustaja Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Vice Cat"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Akshually"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Trad"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Retro Storage"
+    }
+  ]
+}

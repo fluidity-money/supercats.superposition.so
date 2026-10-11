@@ -1,0 +1,36 @@
+{
+  "name": "New Jessa",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/5129.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "New Jessa"
+    },
+    {
+      "trait_type": "background",
+      "value": "Mal\u00E9"
+    },
+    {
+      "trait_type": "body",
+      "value": ""
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Sea Master"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Aye-aye"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Solid"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Grab your Popcorn"
+    }
+  ]
+}

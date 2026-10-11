@@ -1,0 +1,36 @@
+{
+  "name": "Bodo Robby",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/480.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Bodo Robby"
+    },
+    {
+      "trait_type": "background",
+      "value": "Beijing"
+    },
+    {
+      "trait_type": "body",
+      "value": "You mi fren! -DARK-"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Retvrn"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Aye-aye"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Not for Begginers"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Fly Catcher"
+    }
+  ]
+}

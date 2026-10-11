@@ -1,0 +1,36 @@
+{
+  "name": "Jud Hoekstra",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/997.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Jud Hoekstra"
+    },
+    {
+      "trait_type": "background",
+      "value": "Dakar"
+    },
+    {
+      "trait_type": "body",
+      "value": "Cookie Enjoyer Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Trad Netherlander"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Akshually"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Feels good to be a king"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Audiophile"
+    }
+  ]
+}

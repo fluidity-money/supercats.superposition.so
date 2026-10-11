@@ -1,0 +1,36 @@
+{
+  "name": "Twiggy Carlie",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/42.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Twiggy Carlie"
+    },
+    {
+      "trait_type": "background",
+      "value": "Niamey"
+    },
+    {
+      "trait_type": "body",
+      "value": "Wut Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Metalhead"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Like a sir"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Steampunk"
+    },
+    {
+      "trait_type": "hand",
+      "value": "Retro Storage"
+    }
+  ]
+}

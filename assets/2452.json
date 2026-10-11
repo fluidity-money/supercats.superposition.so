@@ -1,0 +1,36 @@
+{
+  "name": "Belleville Gail",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/2452.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Belleville Gail"
+    },
+    {
+      "trait_type": "background",
+      "value": "Rabat"
+    },
+    {
+      "trait_type": "body",
+      "value": "Sadge Dark"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Vice Cat"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Kino enjoyer"
+    },
+    {
+      "trait_type": "hat",
+      "value": "Vaporwave boi"
+    },
+    {
+      "trait_type": "hand",
+      "value": "PetPet"
+    }
+  ]
+}

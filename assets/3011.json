@@ -1,0 +1,36 @@
+{
+  "name": "Imelda Susy",
+  "description": "Mainnet Supercats",
+  "external_url": "superposition.so",
+  "image": "https://orange-realistic-crayfish-879.mypinata.cloud/ipfs/bafybeiar3zveepgjpm2gnol6nxyo5m7wv3g4oglwlz7i7hfauky33u73fi/3011.png",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "Imelda Susy"
+    },
+    {
+      "trait_type": "background",
+      "value": "Dakar"
+    },
+    {
+      "trait_type": "body",
+      "value": "Muzak Light"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "Trad Spanish"
+    },
+    {
+      "trait_type": "accessory",
+      "value": "Sophisticated"
+    },
+    {
+      "trait_type": "hat",
+      "value": ""
+    },
+    {
+      "trait_type": "hand",
+      "value": "PetPet"
+    }
+  ]
+}
