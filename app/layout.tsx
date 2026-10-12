@@ -6,10 +6,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://supercats.superposition.so"),
   title: "Supercats Claims",
-  description: "Claim your Superposition Supercats onchain.",
+  description: "Claim your Superposition Supercats on Robinhood Mainnet.",
   openGraph: {
     title: "Supercats NFTs",
-    description: "Claim your Superposition Supercats onchain.",
+    description: "Claim your Superposition Supercats on Robinhood Mainnet.",
     type: "website",
     images: [
       {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Supercats NFTs",
-    description: "Claim your Superposition Supercats onchain.",
+    description: "Claim your Superposition Supercats on Robinhood Mainnet.",
     images: ["/opengraph-image.png"],
   },
 };
