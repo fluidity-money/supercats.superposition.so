@@ -13,7 +13,7 @@ const MERKLE_PROOF_ROOT: U =
 
 const CDN_URI_CATS: &'static str = "https://cats-cdn.superposition.so/";
 
-fn assert_can_transfer(from: &[u8; 20], to: &[u8; 20], token_id: &U) -> [u8; 20] {
+fn assert_can_transfer(from: &[u8; 20], to: &[u8; 20], token_id: &U, mint: bool) -> [u8; 20] {
     let owner: [u8; 20] = storage::owner_of::get(token_id).into();
     assert_eq!(
         &owner,
@@ -23,11 +23,13 @@ fn assert_can_transfer(from: &[u8; 20], to: &[u8; 20], token_id: &U) -> [u8; 20]
     );
     assert_ne!(to, &[0u8; 20], "to target is a zero address");
     let sender = msg_sender();
-    if &sender != from
-        && storage::approval::get(token_id).addr() != sender
-        && !storage::approved_for_all::get(from, sender).is_some()
-    {
-        panic!("token id {token_id} sender is not approved");
+    if !mint {
+        if &sender != from
+            && storage::approval::get(token_id).addr() != sender
+            && !storage::approved_for_all::get(from, sender).is_some()
+        {
+            panic!("token id {token_id} sender is not approved");
+        }
     }
     sender
 }
@@ -36,8 +38,8 @@ const TOPIC_TRANSFER: U = const_keccak256(b"Transfer(address,address,uint256)");
 const TOPIC_APPROVAL: U = const_keccak256(b"Approval(address,address,uint256)");
 const TOPIC_APPROVAL_FOR_ALL: U = const_keccak256(b"ApprovalForAll(address,address,bool)");
 
-fn transfer_from(from: [u8; 20], to: [u8; 20], token_id: U) -> [u8; 20] {
-    let sender = assert_can_transfer(&from, &to, &token_id);
+fn transfer_from(from: [u8; 20], to: [u8; 20], token_id: U, mint: bool) -> [u8; 20] {
+    let sender = assert_can_transfer(&from, &to, &token_id, mint);
     if from != [0u8; 20] {
         storage::balance::decr(from);
     }
@@ -69,7 +71,7 @@ fn safe_transfer<const DATA_CAP: usize>(
     data: [u8; DATA_CAP],
     data_len: usize,
 ) {
-    let sender = transfer_from(from, to, token_id);
+    let sender = transfer_from(from, to, token_id, false);
     if addr_has_code(to) {
         unsafe { flush_cache() };
         let (rc, rd) = call_word(
@@ -99,6 +101,7 @@ fn safe_transfer<const DATA_CAP: usize>(
 fn approve(spender: [u8; 20], id: U) {
     let owner = storage::owner_of::get(id).addr();
     let sender = msg_sender();
+    assert_ne!(owner, spender, "spender == owner during approval");
     if sender != owner {
         assert!(
             storage::approved_for_all::get(owner, sender).is_some(),
@@ -111,6 +114,7 @@ fn approve(spender: [u8; 20], id: U) {
 
 fn set_approval_for_all(operator: [u8; 20], approved: bool) {
     let sender = msg_sender();
+    assert_ne!(sender, operator, "spender == operator in approvalForALl");
     storage::approved_for_all::set(sender, operator, approved);
     emit!(
         TOPIC_APPROVAL_FOR_ALL,
@@ -121,7 +125,7 @@ fn set_approval_for_all(operator: [u8; 20], approved: bool) {
     );
 }
 
-const DATA_CAP: usize = 1000;
+const DATA_CAP: usize = 1188;
 
 fn entry(entry: Entry) {
     match entry {
@@ -144,7 +148,7 @@ fn entry(entry: Entry) {
             );
             storage::verified_hashes::exchange(hash);
             assert!(storage::owner_of::get(token_id).is_zero(), "token already claimed");
-            transfer_from([0u8; 20], account.0, token_id.into());
+            transfer_from([0u8; 20], account.0, token_id.into(), true);
         }),
         Entry::Name => write_str("Superposition Supercats"),
         Entry::Symbol => write_str("SPN CATS"),
@@ -199,7 +203,7 @@ fn entry(entry: Entry) {
             data,
         } => flush_guard(|| safe_transfer(from.into(), to.into(), token_id, data.bytes, data.len)),
         Entry::TransferFrom { from, to, token_id } => {
-            flush_guard(|| transfer_from(from.into(), to.into(), token_id));
+            flush_guard(|| transfer_from(from.into(), to.into(), token_id, false));
         }
         Entry::Approve { approved, token_id } => flush_guard(|| approve(approved.into(), token_id)),
         Entry::SetApprovalForAll { operator, approved } => {
