@@ -22,7 +22,7 @@ import { superposition } from "@/web/lib/wagmi";
 
 // The canonical Supercats collection address. Keep this explicit: claims must
 // never be redirected through runtime configuration or user input.
-export const SUPERCATS_ADDRESS: Address = "0x3FCA3E72787973C8f6891d2d43EC398bb1aC1F61";
+export const SUPERCATS_ADDRESS: Address = "0xc4883d61f96bc661e313db85c01e3ce2625e5b7a";
 
 const claimAbi = [
   {
