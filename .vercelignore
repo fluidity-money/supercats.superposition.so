@@ -1,0 +1,25 @@
+# Contract sources and generated artifacts are not required by the web deployment.
+/broadcast/
+/cache/
+/docs/
+/target/
+/src/
+/test/*.rs
+/tests/
+*.wasm
+
+# Original full-resolution collection artwork and metadata are not used by the portal.
+/assets/
+/images/
+
+# The deployable copy lives at public/proofs.json.
+/proofs.json
+
+# Local-only scripts and metadata.
+/index.js
+/get-proof.js
+/Makefile
+/foundry.toml
+/rust-toolchain.toml
+/Cargo.lock
+/Cargo.toml
