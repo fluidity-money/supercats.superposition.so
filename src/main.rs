@@ -155,7 +155,7 @@ fn entry(entry: Entry) {
         Entry::TokenUri { token_id } => {
             const URI_LEN: usize = 34;
             const TOKEN_ID_LEN: usize = 78;
-            const TOKEN_URI_CAP: usize = URI_LEN + TOKEN_ID_LEN;
+            const TOKEN_URI_CAP: usize = URI_LEN + TOKEN_ID_LEN + 5;
             assert_ne!(
                 [0u8; 20],
                 storage::owner_of::get(token_id).addr(),
@@ -165,7 +165,8 @@ fn entry(entry: Entry) {
             buf[..URI_LEN].copy_from_slice(CDN_URI_CATS.as_bytes());
             let (token_str, token_str_len) = token_id.str_slice();
             buf[URI_LEN..URI_LEN + token_str_len].copy_from_slice(&token_str[..token_str_len]);
-            let len = URI_LEN + token_str_len;
+            buf[URI_LEN+token_str_len..URI_LEN + token_str_len + 5].copy_from_slice(b".json");
+            let len = URI_LEN + token_str_len + 5;
             let uri = unsafe { core::str::from_utf8_unchecked(&buf[..len]) };
             write_str(uri)
         }
@@ -264,7 +265,8 @@ mod test {
                     &proof.into_iter().map(U).collect::<Vec<_>>(),
                 )
                 .unwrap(),
-            })
+            });
+            entry(Entry::TokenUri { token_id: U::from(token_id) })
         }
     }
 }

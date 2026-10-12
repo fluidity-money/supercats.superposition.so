@@ -50,6 +50,36 @@ const ownerOfAbi = [
 
 type LoadState = "idle" | "loading" | "ready" | "error";
 
+const COLLECTION_SIZE = 5_200;
+const GALLERY_BATCH_SIZE = 180;
+const BACKDROP_IDS = Array.from(
+  { length: 48 },
+  (_, index) => ((index * 109 + 241) % COLLECTION_SIZE) + 1,
+);
+
+function nftImageUrl(tokenId: number) {
+  return `https://cats-cdn.superposition.so/${tokenId}.png`;
+}
+
+function CollectionBackdrop() {
+  return (
+    <div className="collection-backdrop" aria-hidden="true">
+      <div className="backdrop-grid">
+        {BACKDROP_IDS.map((tokenId, index) => (
+          <img
+            key={tokenId}
+            src={nftImageUrl(tokenId)}
+            alt=""
+            decoding="async"
+            loading={index < 24 ? "eager" : "lazy"}
+          />
+        ))}
+      </div>
+      <div className="backdrop-shade" />
+    </div>
+  );
+}
+
 function shorten(value: string, head = 6, tail = 4) {
   return `${value.slice(0, head)}…${value.slice(-tail)}`;
 }
@@ -91,7 +121,7 @@ function TokenCard({
   return (
     <article className="token-card">
       <img
-        src={`https://cats-cdn.superposition.so/${item.token_id}.png`}
+        src={nftImageUrl(item.token_id)}
         alt={`Supercat #${item.token_id}`}
       />
       <div className="token-meta">
@@ -122,6 +152,8 @@ export function SupercatsClaims() {
   const [claimedTokens, setClaimedTokens] = useState<Set<number>>(() => new Set());
   const [transactionHash, setTransactionHash] = useState<Hash>();
   const [flowError, setFlowError] = useState<string>();
+  const [galleryCount, setGalleryCount] = useState(GALLERY_BATCH_SIZE);
+  const gallerySentinelRef = useRef<HTMLDivElement>(null);
   const accountLifecycleRef = useRef(0);
   const previousAddressRef = useRef(address);
   if (previousAddressRef.current?.toLowerCase() !== address?.toLowerCase()) {
@@ -162,6 +194,21 @@ export function SupercatsClaims() {
     setTransactionHash(undefined);
     setFlowError(undefined);
   }, [address]);
+
+  useEffect(() => {
+    const sentinel = gallerySentinelRef.current;
+    if (!sentinel || galleryCount >= COLLECTION_SIZE) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry?.isIntersecting) return;
+        setGalleryCount((count) => Math.min(count + GALLERY_BATCH_SIZE, COLLECTION_SIZE));
+      },
+      { rootMargin: "1200px 0px" },
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [galleryCount]);
 
   const eligibleClaims = useMemo(
     () => address ? findClaimsForAddress(proofs, address) : [],
@@ -233,7 +280,9 @@ export function SupercatsClaims() {
 
   return (
     <main className="shell">
-      <header className="site-header">
+      <section className="collection-hero">
+        <CollectionBackdrop />
+        <header className="site-header">
         <a className="brand" href="https://superposition.so" target="_blank" rel="noreferrer">
           <span className="brand-mark"><BrandMark /></span>
           <span>Superposition</span>
@@ -317,6 +366,37 @@ export function SupercatsClaims() {
             </div>
           )}
         </div>
+      </section>
+      </section>
+
+      <section className="collection-story" aria-labelledby="collection-title">
+        <p className="story-index">Supercats / 5,200</p>
+        <h2 id="collection-title">The ticket to the Superposition ecosystem</h2>
+        <p>Supercats is a NFT collection previously deployed on Superposition Mainnet. 5200 hand drawn combined NFTs.</p>
+      </section>
+
+      <section className="collection-gallery-section" aria-label="The complete Supercats collection">
+        <div className="gallery-heading">
+          <p>Every Supercat</p>
+          <span>0001 — 5200</span>
+        </div>
+        <div className="collection-gallery">
+          {Array.from({ length: galleryCount }, (_, index) => {
+            const tokenId = index + 1;
+            return (
+              <figure className="collection-tile" key={tokenId}>
+                <img
+                  src={nftImageUrl(tokenId)}
+                  alt={`Supercat #${tokenId}`}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>#{tokenId.toString().padStart(4, "0")}</figcaption>
+              </figure>
+            );
+          })}
+        </div>
+        <div ref={gallerySentinelRef} className="gallery-sentinel" aria-hidden="true" />
       </section>
     </main>
   );
