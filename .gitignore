@@ -4,7 +4,12 @@
 cache/
 docs/
 .env
+.env*
+!.env.example
 out/
 /target
 supercats.superposition.so.wasm
-node_modules
+node_modules/
+.next/
+*.tsbuildinfo
+.DS_Store

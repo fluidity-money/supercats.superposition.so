@@ -143,6 +143,7 @@ fn entry(entry: Entry) {
                 "proof not verified"
             );
             storage::verified_hashes::exchange(hash);
+            assert!(storage::owner_of::get(token_id).is_zero(), "token already claimed");
             transfer_from([0u8; 20], account.0, token_id.into());
         }),
         Entry::Name => write_str("Superposition Supercats"),

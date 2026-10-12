@@ -1,0 +1,326 @@
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/pp-neue-montreal-book.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/pp-neue-montreal-medium.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Supply Mono";
+  src: url("/fonts/aeonik-mono-medium.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --ink: #11110f;
+  --paper: #f1f0e8;
+  --green: #c8ff1a;
+  --muted: #77786f;
+  --line: rgba(17, 17, 15, 0.2);
+  --mono: "Supply Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Neue Montreal", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+button, a { color: inherit; font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .55; }
+
+.shell { min-height: 100vh; }
+.site-header {
+  height: 72px;
+  padding: 0 clamp(20px, 3.5vw, 56px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -.035em;
+  text-decoration: none;
+}
+.brand-mark { display: block; width: 27px; height: 27px; }
+.brand-mark svg { display: block; width: 100%; height: 100%; fill: var(--ink); }
+.brand-mark .brand-cutout { fill: var(--paper); }
+.account-button {
+  display: flex;
+  gap: 16px;
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  font: 10px/1 var(--mono);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.account-button span { color: var(--muted); }
+.account-button:hover { border-color: var(--ink); }
+
+.claim-section {
+  width: min(920px, calc(100% - 40px));
+  min-height: calc(100vh - 72px);
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.claim-intro {
+  width: min(650px, 100%);
+  margin: 0 auto;
+  padding: 64px 28px 0;
+  text-align: center;
+}
+.eyebrow {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font: 10px/1 var(--mono);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+h1 {
+  margin: 0;
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 400;
+  line-height: .98;
+  letter-spacing: -.055em;
+}
+.claim-intro > p:last-child {
+  width: min(490px, 100%);
+  margin: 22px auto 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.claim-panel {
+  width: 100%;
+  min-height: 470px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  text-align: left;
+}
+.connect-state {
+  min-height: 220px;
+  padding: 38px 32px 52px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.connect-state h2,
+.empty-state h2 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 400;
+  letter-spacing: -.045em;
+}
+.connect-state > p,
+.empty-state p {
+  width: min(430px, 100%);
+  margin: 13px auto 28px;
+  color: #aaa9a1;
+  font-size: 15px;
+  line-height: 1.45;
+}
+.primary-button {
+  width: min(460px, 100%);
+  min-height: 62px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--green);
+  border-radius: 0;
+  background: var(--green);
+  color: var(--ink);
+  font: 11px/1 var(--mono);
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.primary-button span:last-child { font-size: 18px; }
+.primary-button:hover:not(:disabled) { background: var(--paper); border-color: var(--paper); }
+.connect-state small {
+  margin-top: 15px;
+  color: #77776f;
+  font: 10px/1.4 var(--mono);
+  letter-spacing: .03em;
+}
+
+.connected-state { padding: 26px; }
+.wallet-row {
+  min-height: 45px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  border-bottom: 1px solid rgba(241,240,232,.2);
+  font: 10px/1.4 var(--mono);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.wallet-row code {
+  min-width: 0;
+  overflow: hidden;
+  color: #aaa9a1;
+  text-overflow: ellipsis;
+  text-transform: none;
+}
+.network { margin-left: auto; color: #ff9c86; white-space: nowrap; }
+.network::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background: currentColor;
+}
+.network.ready { color: var(--green); }
+.status,
+.empty-state {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #aaa9a1;
+  text-align: center;
+}
+.empty-state p { margin-bottom: 0; }
+.spinner {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(241,240,232,.3);
+  border-top-color: var(--green);
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(1turn); } }
+
+.eligible-state { padding-top: 25px; }
+.eligibility-heading {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.eligibility-heading > div { display: flex; align-items: baseline; gap: 14px; }
+.eligibility-heading span {
+  color: #aaa9a1;
+  font: 10px/1 var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.eligibility-heading strong { color: var(--green); font: 34px/1 var(--mono); }
+.eligibility-heading p { margin: 0; color: #aaa9a1; font-size: 14px; }
+.token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1px;
+  border: 1px solid rgba(241,240,232,.25);
+  background: rgba(241,240,232,.25);
+}
+.token-card { min-width: 0; background: var(--ink); }
+.token-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+.token-meta {
+  min-height: 76px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.token-meta div { display: flex; flex-direction: column; gap: 5px; }
+.token-meta span { color: #999990; font: 9px/1 var(--mono); text-transform: uppercase; }
+.token-meta strong { font: 19px/1 var(--mono); font-weight: 400; }
+.token-meta button {
+  padding: 11px 15px;
+  border: 1px solid var(--green);
+  border-radius: 0;
+  background: transparent;
+  color: var(--green);
+  font: 10px/1 var(--mono);
+  text-transform: uppercase;
+}
+.token-meta button:hover:not(:disabled) { background: var(--green); color: var(--ink); }
+.transaction {
+  width: fit-content;
+  margin: 22px auto 0;
+  display: block;
+  color: var(--green);
+  font: 11px/1.3 var(--mono);
+  text-decoration: none;
+}
+.error { color: #ff8a70 !important; font-size: 13px; line-height: 1.4; }
+.connect-state > .error { max-width: 540px; margin: 18px auto 0; }
+.flow-error { max-width: 720px; margin: 22px auto 0; overflow-wrap: anywhere; text-align: center; }
+.contract-note {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font: 10px/1.5 var(--mono);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .site-header { height: 64px; }
+  .claim-section { min-height: calc(100vh - 64px); padding: 32px 0; }
+  .claim-intro { padding-top: 52px; }
+  .claim-intro > p:last-child { font-size: 16px; }
+  .connect-state { min-height: 205px; padding: 32px 20px 44px; }
+  .connected-state { padding: 18px; }
+  .wallet-row { flex-wrap: wrap; }
+  .wallet-row code { width: 100%; }
+  .network { width: 100%; margin-left: 0; }
+  .eligibility-heading { align-items: flex-start; flex-direction: column; gap: 12px; }
+}
+
+@media (max-width: 460px) {
+  .brand { font-size: 16px; }
+  .brand-mark { width: 24px; height: 24px; }
+  .account-button { padding: 8px; }
+  .account-button span { display: none; }
+  .claim-section { width: calc(100% - 28px); }
+  .eyebrow { margin-bottom: 16px; }
+  h1 { font-size: 43px; }
+  .claim-intro > p:last-child { margin-top: 17px; }
+  .claim-intro { padding: 42px 18px 0; }
+  .connect-state { min-height: 190px; }
+  .primary-button { min-height: 58px; }
+  .contract-note { padding: 0 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner { animation-duration: 1.8s; }
+}
