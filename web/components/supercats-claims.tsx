@@ -371,8 +371,29 @@ export function SupercatsClaims() {
 
       <section className="collection-story" aria-labelledby="collection-title">
         <p className="story-index">Supercats / 5,200</p>
-        <h2 id="collection-title">The ticket to the Superposition ecosystem</h2>
-        <p>Supercats is a NFT collection previously deployed on Superposition Mainnet. 5200 hand drawn combined NFTs.</p>
+        <div className="story-layout">
+          <div className="story-copy">
+            <h2 id="collection-title">The ticket to the Superposition ecosystem</h2>
+            <p>Supercats is a NFT collection previously deployed on Superposition Mainnet. 5200 hand drawn combined NFTs.</p>
+          </div>
+          <div className="ecosystem-grid" aria-label="Projects in the Superposition ecosystem">
+            <a className="ecosystem-project" href="https://9lives.so" target="_blank" rel="noreferrer">
+              <span className="project-number">01</span>
+              <img src="/ecosystem/9lives.svg" alt="9Lives" />
+              <span className="project-name">9Lives <span aria-hidden="true">↗</span></span>
+            </a>
+            <a className="ecosystem-project" href="https://florin.so" target="_blank" rel="noreferrer">
+              <span className="project-number">02</span>
+              <img src="/ecosystem/florin.svg" alt="Florin" />
+              <span className="project-name">Florin <span aria-hidden="true">↗</span></span>
+            </a>
+            <a className="ecosystem-project ecosystem-project-wide" href="https://superposition.so" target="_blank" rel="noreferrer">
+              <span className="project-number">03</span>
+              <img src="/ecosystem/superposition.svg" alt="Superposition" />
+              <span className="project-name">Superposition <span aria-hidden="true">↗</span></span>
+            </a>
+          </div>
+        </div>
       </section>
 
       <section className="collection-gallery-section" aria-label="The complete Supercats collection">
