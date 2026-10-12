@@ -90,10 +90,10 @@ function TokenCard({
 
   return (
     <article className="token-card">
-      <div className="token-preview" aria-hidden="true">
-        <span>Supercat</span>
-        <strong>#{item.token_id}</strong>
-      </div>
+      <img
+        src={`https://cats-cdn.superposition.so/${item.token_id}.png`}
+        alt={`Supercat #${item.token_id}`}
+      />
       <div className="token-meta">
         <div>
           <span>{claimed ? "Already claimed" : "Supercat"}</span>
